@@ -126,9 +126,7 @@ var NameParse = (function(){
 			"USA","USAF","USAFR","USAR","USCG","USMC","USMCR","USN","USNR"
 		];
 
-		var suffixIndex = suffixArray.map(function(suffix){
-			return suffix.toLowerCase();
-		}).indexOf(word);
+		var suffixIndex = suffixArray.indexOf(word);
 
 		if(suffixIndex >= 0) {
 			return suffixArray[suffixIndex];
